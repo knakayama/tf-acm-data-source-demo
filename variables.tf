@@ -21,6 +21,6 @@ variable "s3_objects" {
 }
 
 data "aws_acm_certificate" "acm" {
-  provider = "aws.us-west-1"
+  provider = "aws.us-east-1"
   domain   = "*.${var.domain}"
 }
